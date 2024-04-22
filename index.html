@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHLINK DEVELOPMENT</title>
+    <meta name="viewport" consent="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-image">
+        <!-- <img src="images/company_logo.jpg"  alt="Company Logo"> -->
+        <h1>TECHLINK DEVELOPMENT</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="android.html">Android</a></li>
+            <li><a href="web.html">Websites</a></li>
+            <li><a href="systems.html">Systems Development</a></li>
+            <li><a href="ads.html">Ads</a></li>
+            <li><a href="#contact">Contact</a></li>
+           
+        </ul>
+    </div>
+   
+    <div class="services-description">
+        <p>At TechLink, we specialize in crafting innovative technological solutions tailored to meet your needs. From Android app development to website design, systems development, and strategic advertising solutions, we offer a comprehensive suite of services to propel your business forward in the digital age. With a focus on creativity, reliability, and cutting-edge technology, we are committed to delivering exceptional results that exceed your expectations. Let us empower your business to thrive in today's fast-paced and competitive market.</p>
+    </div>
+    <div class="service" id="android-service">
+        <h2>ANDROID APPS DEVELOPMENT</h2>
+        <div class="service-content">
+            <img src="images/android_image.jpg" alt="Android Development Image">
+            <p>
+                At TechLink, we specialize in crafting innovative Android applications tailored to your unique requirements. Our experienced team of developers is proficient in the latest technologies and best practices, ensuring that your app is not only user-friendly but also robust and scalable. Whether you need a consumer-facing app to enhance engagement or an enterprise solution to streamline operations, we've got you covered. From concept to deployment, we provide end-to-end Android development services to bring your ideas to life.
+            </p>
+        </div>
+    </div>
+    
+    <div class="service" id="website-service">
+        <h2>WEBSITE DESIGN</h2>
+        <div class="service-content">
+            <img src="images/websites_image.jpg" alt="Website Development Image">
+            <p>
+                Our website development services at TechLink are designed to create stunning, user-friendly websites that effectively communicate your brand message and drive results. Whether you need a simple business website, an e-commerce platform, or a custom web application, we have the expertise to bring your vision to life. With a focus on responsive design, intuitive navigation, and cutting-edge technologies, we ensure that your website stands out in the crowded digital landscape and delivers an exceptional user experience.
+            </p>
+        </div>
+    </div>
+    
+    <div class="service" id="ads-service">
+        <h2>ADVERTISEMENTS</h2>
+        <div class="service-content">
+            <img src="images/ads3.jpg" alt="Advertisements Image">
+            <p>
+                Our advertising services at TechLink are tailored to help businesses reach their target audience and achieve their marketing goals. We specialize in creating engaging ad campaigns across various platforms, including social media, search engines, and display networks. Whether you're looking to increase brand awareness, drive website traffic, or generate leads, our team of experts will develop and execute effective ad strategies to maximize your ROI. With a data-driven approach and continuous optimization, we ensure that your advertising dollars are invested wisely for maximum impact.
+            </p>
+        </div>
+    </div>
+    
+    <div class="service" id="systems-service">
+        <h2>SYSTEMS DEVELOPMENT</h2>
+        <div class="service-content">
+            <p>
+                Our systems development services at TechLink are dedicated to creating efficient and scalable solutions that empower businesses to streamline their operations and achieve their objectives. We specialize in developing custom software applications, database management systems, and integrated solutions tailored to your specific requirements. Whether you need to automate business processes, manage complex data sets, or enhance collaboration within your organization, our team of experienced developers will work closely with you to deliver innovative and reliable solutions that drive business growth.
+            </p>
+            <img src="images/systems_image.jpg" alt="Systems Development Image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <h3>TECHLINK DEVELOPMENT</h3>
+            <ul>
+                <li><a href="android.html">Android Apps Development</a></li>
+                <li><a href="web.html">Web Design</a></li>
+                <li><a href="systems.html">Systems Development</a></li>
+                <li><a href="ads.html">Ads Generation</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-right">
+            <h4 id="contact">CONTACT</h4>
+            <p>Email: example@example.com</p><br>
+            <p>Phone: +254742628281</p>
+        </div>
+    </footer>
+    
+    
+    <script>
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to add animation classes when element is in viewport
+        function animateOnScroll() {
+            var androidService = document.getElementById('android-service');
+            var websiteService = document.getElementById('website-service');
+            var adsService = document.getElementById('ads-service');
+            var systemsService = document.getElementById('systems-service');
+
+            if (isInViewport(androidService)) {
+                androidService.classList.add('fadeInUp');
+            }
+            if (isInViewport(websiteService)) {
+                websiteService.classList.add('fadeInUp');
+            }
+            if (isInViewport(adsService)) {
+                adsService.classList.add('fadeInUp');
+            }
+            if (isInViewport(systemsService)) {
+                systemsService.classList.add('fadeInUp');
+            }
+        }
+
+        // Event listener for scroll
+        window.addEventListener('scroll', function() {
+            animateOnScroll();
+        });
+
+        // Initial animation check on page load
+        animateOnScroll();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,981 @@
+body {
+    background-color: #07164B;
+    font-family: Arial, sans-serif;
+    
+}
+
+.header-image{
+    background-image: url(images/company_logo.jpg);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 200px;
+}
+
+.header-image h1{
+    text-align: center;
+    font-size: 80px;
+    padding-top: 50px;
+    margin-top: 0;
+    color: #1AF130;
+}
+
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+    list-style-type:none;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 10px;
+    
+}
+
+.navigation ul li a {
+    text-decoration:none;
+    color: #1AF130;
+    font-weight: bold;
+    font-size: larger;
+    /*transition: background-color 0.3s, color 0.3s;*/
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    
+
+}
+.navigation a:hover {
+        background-color: #135007; /* Change background color on hover */
+        transform: translateY(-10px);
+        border-color: #1AF130;
+}
+
+
+.services-description {
+    text-align: center;
+    margin-top: 20px;
+    font-size: xx-large;
+    color: #ffff;
+    
+}
+
+#android-service {
+    background-color: #07164B;
+    color: #1AF130;
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+#android-service h2 {
+    text-align: center;
+    color: #1AF130;
+}
+
+#android-service .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#android-service img,
+#android-service p {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 50%; /* Ensure image and paragraph occupy equal width */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: #ffff;
+
+}
+
+
+#android-service img {
+    order: 1; /* Image appears first in the flexbox */
+}
+
+#android-service p {
+    order: 2; /* Paragraph appears second in the flexbox */
+}
+
+#website-service {
+    background-color: #07164B;
+    color: #1AF130;
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+#website-service h2 {
+    text-align: center;
+    color: #1AF130;
+}
+
+#website-service .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#website-service img,
+#website-service p {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 50%; /* Ensure image and paragraph occupy equal width */
+    font-size: xx-large;
+    color: #ffff;
+}
+
+#website-service img {
+    order: 2; /* Image appears second in the flexbox */
+}
+
+#website-service p {
+    order: 1; /* Paragraph appears first in the flexbox */
+}
+
+#ads-service {
+    background-color: #07164B;
+    color: #1AF130;
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+#ads-service h2 {
+    text-align: center;
+    color: #1AF130;
+}
+
+#ads-service .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#ads-service img,
+#ads-service p {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 50%; /* Ensure image and paragraph occupy equal width */
+    font-size: xx-large;
+    color: #ffff;
+}
+
+#ads-service img {
+    order: 1; /* Image appears first in the flexbox */
+}
+
+#ads-service p {
+    order: 2; /* Paragraph appears second in the flexbox */
+}
+
+#systems-service {
+    background-color: #07164B;
+    color: #1AF130;
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+#systems-service h2 {
+    text-align: center;
+    color: #1AF130;
+}
+
+#systems-service .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#systems-service img,
+#systems-service p {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 50%; /* Ensure image and paragraph occupy equal width */
+    font-size: xx-large;
+    color: #ffff;
+}
+
+#systems-service img {
+    order: 2; /* Image appears second in the flexbox */
+}
+
+#systems-service p {
+    order: 1; /* Paragraph appears first in the flexbox */
+}
+
+footer {
+    background-color: #000;
+    color: #ffff;
+    padding:40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.footer-left h3,h4 {
+    margin-bottom: 10px;
+    color: #1AF130;
+}
+
+.footer-left ul{
+   list-style-type: none;
+
+}
+
+.footer-left ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.footer-left ul li a:hover{
+    padding-left: 3px;
+}
+
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+/* Styles for the Android development section */
+.android-description {
+    max-width: auto; /* Limit the width of the content for better readability */
+    
+    
+}
+
+.android-description h2 {
+    font-size: 24px; /* Adjust heading font size */
+    text-align: center; /* Center-align the text */
+    color: #1AF130;
+    
+}
+
+.android-description p {
+    font-size: xx-large; /* Adjust paragraph font size */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+   /* text-align: justify;  Justify the text */
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #ffff;
+}
+
+.android-description img {
+    max-width: 80%; /* Make sure images don't exceed their container width */
+    margin: 20px auto; /* Center the images horizontally and add spacing */
+    display: block; /* Ensure images are displayed as block elements */
+}
+
+/* Media Queries for Different Device Sizes */
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
+    /* Styles for tablets */
+    .header-image h1 {
+        font-size: 60px;
+    }
+
+    .services-description {
+        font-size: 45px;
+    }
+
+    .android-description p {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: px;
+    }
+}
+
+/* Large Smartphones */
+@media only screen and (max-width: 768px) {
+    .header-image h1 {
+        font-size: 40px;
+        width: 100%;
+        padding-top: 75px;
+        
+    }
+
+    .navigation{
+        width: 100%;
+        font: 5px;
+        padding-left: 0px;
+        margin-left: 0%;
+        text-align: center;
+        
+    }
+
+    .services-description {
+        font-size: 30px;
+    }
+    .service h2{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size:x-large;
+        
+        
+    }.service{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #android-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+        
+    }
+   
+    #android-service img,
+    #android-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #android-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #android-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 30px;
+       
+    }
+
+    #website-service .service-content{
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+    }
+   
+    #website-service img,
+    #website-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #website-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #website-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 30px;
+        
+       
+    }
+
+    #ads-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #ads-service img,
+    #ads-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #ads-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #ads-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 30px;
+       
+    }
+
+    #systems-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #android-service img,
+    #systems-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #systems-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+
+    #systems-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 30px;
+        
+       
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add spacing between sections */
+        font-size: 24px;
+    }
+
+    .footer-left h3,
+    .footer-left h4 {
+        margin-bottom: 10px;
+        color: #1AF130;
+        text-align: center;
+    }
+
+    .footer-left ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-left ul li {
+        display: inline-block;
+        margin-right: 10px; /* Add spacing between list items */
+    }
+
+    .footer-left ul li a {
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .footer-left ul li a:hover {
+        padding-left: 3px;
+    }
+
+    .footer-right p {
+        margin: 5px 0;
+        text-align: center;
+    }
+    .android-description p{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* Medium Smartphones */
+@media only screen and (max-width: 480px) {
+    /* Styles for medium smartphones */
+    .header-image h1 {
+        font-size: 40px;
+        width: 100%;
+        
+    }
+
+    .navigation{
+        width: 100%;
+        font: 5px;
+        padding-left: 0px;
+        margin-left: 0%;
+        text-align: center;
+        
+    }
+
+    .services-description {
+        font-size: 19px;
+    }
+    .service h2{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: larger;
+        
+        
+    }.service{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #android-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+        
+    }
+   
+    #android-service img,
+    #android-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #android-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #android-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 19px;
+       
+    }
+
+    #website-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+    }
+   
+    #website-service img,
+    #website-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #website-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #website-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 19px;
+        
+       
+    }
+
+    #ads-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #ads-service img,
+    #ads-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #ads-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #ads-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 19px;
+       
+    }
+
+    #systems-service .service-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #android-service img,
+    #systems-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #systems-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+
+    #systems-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 19px;
+        
+       
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add spacing between sections */
+        font-size: 16px;
+    }
+
+    .footer-left h3,
+    .footer-left h4 {
+        margin-bottom: 10px;
+        color: #1AF130;
+        text-align: center;
+    }
+
+    .footer-left ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-left ul li {
+        display: inline-block;
+        margin-right: 10px; /* Add spacing between list items */
+    }
+
+    .footer-left ul li a {
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .footer-left ul li a:hover {
+        padding-left: 3px;
+    }
+
+    .footer-right p {
+        margin: 5px 0;
+        text-align: center;
+    }
+    .android-description p{
+        font-size: 20px;
+        text-align: center; 
+    }
+}
+/* Small Smartphones */
+@media only screen and (max-width: 360px) {
+    /* Styles for small smartphones */
+    .header-image h1 {
+        font-size: 30px;
+        width: 100%;
+        
+    }
+
+    .navigation{
+        width: 100%;
+        font: 5px;
+        padding-left: 0px;
+        margin-left: 0%;
+        text-align: center;
+        
+    }
+
+    .services-description {
+        font-size: 17px;
+    }
+    .service h2{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: larger;
+        
+        
+    }.service{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #android-service .service-content{
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+        
+    }
+   
+    #android-service img,
+    #android-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #android-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #android-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 17px;
+       
+    }
+
+    #website-service .service-content{
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        
+    }
+   
+    #website-service img,
+    #website-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #website-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #website-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 17px;
+        
+       
+    }
+
+    #ads-service .service-content{
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #ads-service img,
+    #ads-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #ads-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        
+    }
+
+    #ads-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 17px;
+        padding-left: 0%;
+        padding-right: 0%;
+       
+    }
+
+    #systems-service .service-content{
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+   
+    #android-service img,
+    #systems-service p {
+        padding: 20px; /* Adjust padding as needed */
+        max-width: 100%;/* Ensure image and paragraph occupy equal width */
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    #systems-service img {
+        order: 1; /* Set the image to appear first */
+        margin-bottom: 0px;
+        margin-top: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+
+    #systems-service p {
+        order: 2; /* Paragraph appears second in the flexbox */
+        font-size: 17px;
+        
+       
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add spacing between sections */
+        font-size: 13px;
+    }
+
+    .footer-left h3,
+    .footer-left h4 {
+        margin-bottom: 10px;
+        color: #1AF130;
+        text-align: center;
+    }
+
+    .footer-left ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-left ul li {
+        display: inline-block;
+        margin-right: 10px; /* Add spacing between list items */
+    }
+
+    .footer-left ul li a {
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .footer-left ul li a:hover {
+        padding-left: 3px;
+    }
+
+    .footer-right p {
+        margin: 5px 0;
+        text-align: center;
+    }
+    .android-description p{
+        font-size: 15px;
+        text-align: center;  
+    }
+   /* Define the slideInLeft animation */
+   .eph{
+    animation: transitionIn 3s;
+   }
+    @keyframes transitionIn {
+        from {
+           opacity: 0;
+           transform: rotateX(-10deg);
+        }
+        to {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+     }
+    }
+   
